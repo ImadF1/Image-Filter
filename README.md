@@ -1,22 +1,22 @@
 # Image Filter Studio
 
-Application Python de traitement d'image avec interface Streamlit.
+A Python image processing application with a Streamlit interface.
 
-Le projet permet de charger une image, appliquer plusieurs filtres visuels en temps reel, comparer le resultat avec l'original, puis exporter l'image modifiee.
+The project allows you to load an image, apply several visual filters in real time, compare the result with the original, and then export the modified image.
 
-## Fonctionnalites
+## Features
 
-- conversion en niveaux de gris
-- detection de contours
-- flou gaussien
-- effet sepia
-- effet vintage
-- ajustement de la luminosite
-- ajustement du contraste
-- apercu avant / apres
-- export en PNG
+- Grayscale conversion
+- Edge detection
+- Gaussian blur
+- Sepia effect
+- Vintage effect
+- Brightness adjustment
+- Contrast adjustment
+- Before/After preview
+- PNG export
 
-## Stack technique
+## Technical Stack
 
 - Python
 - OpenCV
@@ -24,7 +24,7 @@ Le projet permet de charger une image, appliquer plusieurs filtres visuels en te
 - Pillow
 - Streamlit
 
-## Structure du projet
+## Project Structure
 
 ```text
 image-filter-app/
@@ -33,7 +33,7 @@ image-filter-app/
 ├── requirements.txt
 ├── README.md
 └── tests/
-    └── test_filters.py
+└── test_filters.py
 ```
 
 ## Installation
@@ -42,13 +42,14 @@ image-filter-app/
 pip install -r requirements.txt
 ```
 
-## Lancer l'application
+## Launch the application
 
 ```bash
 streamlit run app.py
+
 ```
 
-Puis ouvrir l'URL affichee par Streamlit dans le navigateur.
+Then open the URL displayed by Streamlit in your browser.
 
 ## Tests
 
@@ -56,16 +57,16 @@ Puis ouvrir l'URL affichee par Streamlit dans le navigateur.
 python -m unittest discover -s tests -v
 ```
 
-## Cas d'usage
+## Use Cases
 
-- retouche rapide d'images
-- generation d'effets visuels simples
-- mini projet de computer vision
-- demonstration OpenCV avec interface web legere
+- Quick image editing
+- Generation of simple visual effects
+- Mini computer vision project
+- OpenCV demonstration with a lightweight web interface
 
-## Ameliorations possibles
+## Possible Improvements
 
-- ajout d'autres filtres
-- historique des modifications
-- traitement par lot
-- sauvegarde dans plusieurs formats
+- Adding more filters
+- Change history
+- Batch processing
+- Saving in multiple formats
